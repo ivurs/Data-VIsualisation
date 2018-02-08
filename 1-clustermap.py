@@ -43,7 +43,8 @@ g = sns.clustermap( np.log(df_for_clustermap),
                    #cbar_kws={'label': 'colorbar title'}, 
                    row_colors=[row_colors_lbs,row_colors_tius], 
                    cmap='RdBu',
-                   figsize=(28, 12)
+                   figsize=(28, 12),
+                   vmin=-7, vmax=7,
                    )
 
 
